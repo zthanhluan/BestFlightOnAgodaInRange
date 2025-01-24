@@ -80,18 +80,24 @@ Search results can be viewed within the app or received via email. Additionally,
     pip install -r requirements.txt
     
 ### :runner: Running the Application
-Using Python
+- **Using Python**
+
 Activate the virtual environment and run the script:
+
     ```bash
     webScrap\Scripts\activate
     python mail.py
-Using the Batch File
+    
+- **Using the Batch File**
+
 Alternatively, you can run the batch file:
+
     ```bash
     run.bat
-### :hands: Contributions
+    
+### Contributions
 Feel free to fork this repository, open issues, and submit pull requests to improve the application.
 
-###:heart: Enjoy finding the best flight deals on Agoda!
+### :heart: Enjoy finding the best flight deals on Agoda!
 
 Let me know if you want any edits or additional details!
