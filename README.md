@@ -80,15 +80,14 @@ Search results can be viewed within the app or received via email. Additionally,
     pip install -r requirements.txt
     
 ### :runner: Running the Application
-- **Using Python**
 
+- **Using Python**
 Activate the virtual environment and run the script:
     ```bash
     webScrap\Scripts\activate
     python mail.py
     
 - **Using the Batch File**
-
 Alternatively, you can run the batch file:
     ```bash
     run.bat
