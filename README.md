@@ -51,7 +51,7 @@ Search results can be viewed within the app or received via email. Additionally,
 - **Python Version:** `3.13.0`  
 - **Pip Version:** `24.2`  
 
-### :chrome: **Chrome**  
+### :globe_with_meridians: **Chrome**  
 - **Browser Version:** `132.0.6834.83 (Official Build) (64-bit)`  
 - **Chrome Driver:** Stable `132.0.6834.110`  
   - [Download ChromeDriver for Windows 32-bit](https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.110/win32/chromedriver-win32.zip)  
@@ -72,13 +72,14 @@ Search results can be viewed within the app or received via email. Additionally,
    python -m venv webScrap
 2. **Activate the Virtual Environment**:
 
-On Windows:
-    ```bash
-    webScrap\Scripts\activate
+   On Windows:
+   ```bash
+   webScrap\Scripts\activate
 3. **Install Required Dependencies**:
     ```bash
     pip install -r requirements.txt
-:runner: Running the Application
+    
+### :runner: Running the Application
 Using Python
 Activate the virtual environment and run the script:
     ```bash
@@ -88,9 +89,9 @@ Using the Batch File
 Alternatively, you can run the batch file:
     ```bash
     run.bat
-:hands: Contributions
+### :hands: Contributions
 Feel free to fork this repository, open issues, and submit pull requests to improve the application.
 
-:heart: Enjoy finding the best flight deals on Agoda!
+###:heart: Enjoy finding the best flight deals on Agoda!
 
 Let me know if you want any edits or additional details!
