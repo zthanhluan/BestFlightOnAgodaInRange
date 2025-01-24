@@ -83,7 +83,6 @@ Search results can be viewed within the app or received via email. Additionally,
 - **Using Python**
 
 Activate the virtual environment and run the script:
-
     ```bash
     webScrap\Scripts\activate
     python mail.py
@@ -91,11 +90,10 @@ Activate the virtual environment and run the script:
 - **Using the Batch File**
 
 Alternatively, you can run the batch file:
-
     ```bash
     run.bat
     
-### Contributions
+### :raising_hand: Contributions
 Feel free to fork this repository, open issues, and submit pull requests to improve the application.
 
 ### :heart: Enjoy finding the best flight deals on Agoda!
