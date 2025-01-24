@@ -6,6 +6,18 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import time
 import re
+import os
+import sys
+
+def resource_path(relative_path):
+    """ Get the absolute path to the resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temporary folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def get_price(url):
     # Set up Chrome options to run headless
@@ -18,7 +30,7 @@ def get_price(url):
     #chrome_options.add_argument("--disable-blink-features=AutomationControlled")
     
     # Path to your WebDriver executable (e.g., chromedriver)
-    service = Service(".\\chromedriver-win64\\chromedriver.exe")
+    service = Service(resource_path(".\\chromedriver-win64\\chromedriver.exe"))
     driver = webdriver.Chrome(service=service)
 
     try:

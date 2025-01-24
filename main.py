@@ -11,6 +11,17 @@ from sendMail import send_email
 from urllib.parse import urlparse, parse_qs
 import re
 from PyQt5.QtGui import QIcon
+import os
+
+def resource_path(relative_path):
+    """ Get the absolute path to the resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temporary folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 def extract_url_info(url):
     parsed_url = urlparse(url)
@@ -59,7 +70,7 @@ class BestPriceApp(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Best Price on Agoda in Range")
-        self.setWindowIcon(QIcon("icon.png"))
+        self.setWindowIcon(QIcon(resource_path("icon.png")))
         self.setStyleSheet(self.get_styles())
         
         # Main widget and layout
